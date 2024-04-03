@@ -10,7 +10,10 @@ const HeroRegister = () => {
 
     createUserWithEmailAndPassword(auth, email, password)
     .then(result => console.log(result.user))
-    .catch(error => console.error(error.message))
+    .catch(error => {
+      console.error(error);
+      
+    })
   };
 
   return (
